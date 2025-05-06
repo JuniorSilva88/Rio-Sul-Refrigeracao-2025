@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Refrigeração Industrial e Comercial, Câmara Fria, Manutenção de Câmara Fria, Projeto">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Junior Alexandre da Silva">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no ">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Normalize css-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="shortcut icon" href="img/projeto.png" type="image/x-icon">
+    <title>Rio Sul Refrigeração</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="img/logo-rs.png" alt="Logo da Rio Sul Refrigeração">
+
+        <nav class="cabecalho-menu navbar navbar-expand-sm">
+            <!-- Botão do hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens do menu colapsáveis -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <a class="cabecalho-item nav-link" href="/">Home</a>
+                <a class="cabecalho-item nav-link mx-2" href="sobre.html">Sobre</a>
+                <a class="cabecalho-item nav-link mx-2" href="servicos.html">Serviços</a>
+                <a class="cabecalho-item nav-link mx-2" href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="conteudo"> <!--Conteudo-->
+
+        <section class="conteudo-principal"> <!--Conteudo Principal-->
+
+            <div class="conteudo-principal-escrito">
+
+                <h1 class="conteudo-principal-escrito-titulo">Na Rio Sul Refrigeração você encontra!</h1>
+
+                <h2 class="conteudo-principal-escrito-subtitulo">A solução perfeita para o seu Negócio!</h2>
+
+                <p class="conteudo-principal-paragrafo"> Quando o assunto é refrigeração de câmaras frias, Rio Sul
+                    Refrigeração é um nome que os profissionais do setor reconhecem e respeitam.
+                    Com vasta experiência em projetar, instalar e manter sistemas de refrigeração para uma variedade de
+                    clientes comerciais e industriais, Sandro construiu uma reputação como um profissional confiável e
+                    experiente.
+                </p>
+
+                <p class="conteudo-principal-paragrafo"> Rio Sul Refrigeração tem mais de uma década de
+                    experiência em refrigeração de câmaras frigoríficas!
+                    instalação e manutenção de sistemas de refrigeração para clientes comerciais e industriais.
+                    Nosso trabalho inclui projetos para fábricas de processamento de alimentos, empresas farmacêuticas e
+                    centros logísticos.
+                </p>
+
+                <p class="conteudo-principal-paragrafo"> A experiência Rio Sul Refrigeração em refrigeração de câmaras
+                    frigoríficas nos tornou um recurso inestimável para nossos clientes, pois ele é capaz de fornecer
+                    soluções sob medida que atendam às suas necessidades específicas.
+                </p>
+
+            </div>
+
+            <img class="conteudo-principal-imagem d-none d-sm-block" src="img/simbolo.jfif"
+                alt="simbolo de refrigeracao">
+
+        </section> <!--// Fim Conteudo Principal-->
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Alguns trabalhos realizados:</h3>
+
+            <!-- Visível apenas em telas maiores que 576px -->
+            <div class="conteudo-secundario-imagens d-none d-sm-flex justify-content-between">
+                <img class="conteudo-secundario-imagem" src="img/troca-evaporador.jpeg" alt="Interno Camara Fria">
+                <img class="conteudo-secundario-imagem" src="img/tecnico.jpeg"
+                    alt="Manifold Equipamento de Refrigeração">
+                <img class="conteudo-secundario-imagem" src="img/unidade.jpeg" alt="Técnico anotando em prancheta">
+            </div>
+
+            <!-- Carousel visível apenas em telas pequenas -->
+            <div id="carouselTrabalhos" class="carousel slide d-sm-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imag1.jfif" class="d-block w-100" alt="Interno Camara Fria">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imag2.jfif" class="d-block w-100" alt="Manifold Equipamento de Refrigeração">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img3.jfif" class="d-block w-100" alt="Técnico anotando em prancheta">
+                    </div>
+                </div>
+                <!-- Adicionando os controles (setas) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrabalhos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTrabalhos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main> <!--//Fim Conteudo-->
+
+    <footer class="rodape">
+        <section class="redes-sociais">
+            <div>
+                <a class="redes-sociais-icones-link"
+                    href="https://wa.me/5541991742471?text=Olá%20Rio-Sul%20Refrigeração%2C%20vim%20pelo%20seu%20Site%2C%20gostaria%20de%20um%20orçamento"
+                    target="_blank" rel="external">
+                    <img src="img/whatsapp.png" alt="whatsapp"> </a>
+
+                <a class="redes-sociais-icones-link"
+                    href="https://www.instagram.com/refrigeracaoriosul?igsh=b2l0YmNrcWp5Z3lq" target="_blank"
+                    rel="external">
+                    <img src="img/instagram.png" alt="instagram"> </a>
+            </div>
+        </section>
+
+        <section class="rodape-info">
+            <div>
+                <h5 class="copyright">©Copyright <span id="current-year"></span></h5>
+                <p>Desenvolvido por:
+                    <a class="desenvolvido-por" href="https://github.com/JuniorSilva88" target="_blank" rel="external">
+                        Junior Alexandre da Silva</a>
+                </p>
+                <a class="conteudo-principal-paragrafo" href="tel:+554191742471">Ligar para Rio Sul Refrigeração</a>
+                <p class="conteudo-principal-paragrafo">
+                    Todos os direitos reservados - CNPJ: 15.352.338/0001-80 - Rio Sul Refrigeração
+                </p>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/current-year.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+
+</body>
+
+</html>
