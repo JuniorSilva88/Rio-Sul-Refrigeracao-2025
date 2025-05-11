@@ -1,110 +1,100 @@
-/* Root color variables */
+/* Paleta de Cores */
 :root {
-    --cor-de-fundo: #f2f2f2;
-    --texto: #333333;
-    --principal: #0d6efd;
-    --borda: #cccccc;
-    --sombra: rgba(0, 0, 0, 0.1);
+    --fundo: #cbdad5;
+    --hover: #89a7b1;
+    --borda: #566981;
+    --sombra: #3a415a;
+    --fonte: #34344e;
 }
 
-/* Reset some basics */
+/* Reset e base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body setup - Removed min-width to improve responsiveness */
 body {
     font-family: 'Roboto Flex', sans-serif;
     line-height: 1.6;
-    background-color: var(--cor-de-fundo);
-    color: var(--texto);
-    min-width: unset; /* Removed fixed min-width for better responsiveness */
+    background-color: var(--fundo);
+    color: var(--fonte);
+    min-width: unset;
 }
 
-/* Main content container */
 .conteudo {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    min-width: unset; /* Allow flexibility on small screens */
+    min-width: unset;
 }
 
-/* Header styles */
+/* Cabeçalho */
 .cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--borda); /* Cabeçalho com cor de borda */
     padding: 16px 32px;
     box-shadow: 0 2px 4px var(--sombra);
 }
 
-/* Logo */
 .cabecalho-imagem {
     max-width: 150px;
 }
 
-/* Navigation menu */
 .cabecalho-menu {
     display: flex;
     gap: 16px;
 }
 
-/* Navigation links */
+/* Links do menu de navegação */
 .cabecalho-item {
-    color: var(--texto);
+    color: white; /* Texto branco no menu */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .cabecalho-item:hover {
-    color: var(--principal);
+    color: var(--hover); /* Efeito de hover no menu */
 }
 
 /* Focus state for accessibility */
-.cabecalho-item:focus,
-.botao:focus {
-    outline: 2px dashed var(--borda); /* Visible outline for keyboard users */
+.cabecalho-item:focus {
+    outline: 2px dashed var(--borda);
     outline-offset: 4px;
 }
 
-/* Main content section */
+/* Conteúdo Principal */
 .conteudo-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap;
     gap: 32px;
     margin-top: 40px;
 }
 
-/* Text block inside main section */
 .conteudo-principal-escrito {
     flex: 1;
     min-width: 300px;
 }
 
-/* Main heading */
 .conteudo-principal-escrito-titulo {
     font-size: 2rem;
-    color: var(--principal);
+    color: var(--borda);
     margin-bottom: 16px;
 }
 
-/* Subheading */
 .conteudo-principal-escrito-subtitulo {
     font-size: 1.5rem;
     margin-bottom: 16px;
 }
 
-/* Paragraph styling */
 .conteudo-principal-paragrafo {
     margin-bottom: 16px;
 }
 
-/* Main image */
 .conteudo-principal-imagem {
     flex: 1;
     max-width: 400px;
@@ -113,7 +103,7 @@ body {
     box-shadow: 0 4px 8px var(--sombra);
 }
 
-/* Secondary content section */
+/* Conteúdo Secundário */
 .conteudo-secundario {
     margin-top: 60px;
 }
@@ -121,15 +111,13 @@ body {
 .conteudo-secundario-titulo {
     font-size: 1.75rem;
     margin-bottom: 24px;
-    color: var(--principal);
+    color: var(--borda);
 }
 
-/* Images row */
 .conteudo-secundario-imagens {
     gap: 16px;
 }
 
-/* Individual secondary images */
 .conteudo-secundario-imagem {
     width: 100%;
     max-width: 300px;
@@ -142,16 +130,17 @@ body {
     transform: scale(1.03);
 }
 
-/* Footer styles */
+/* Rodapé */
 .rodape {
-    background-color: white;
+    background-color: var(--borda); /* Rodapé com cor de borda */
+    color: white;
     text-align: center;
     padding: 24px 16px;
     margin-top: 60px;
-    border-top: 1px solid var(--borda);
+    border-top: 1px solid var(--sombra);
 }
 
-/* Social media icons */
+/* Ícones de redes sociais */
 .redes-sociais-icones-link img {
     width: 32px;
     margin: 0 8px;
@@ -162,37 +151,53 @@ body {
     transform: scale(1.2);
 }
 
-/* Footer information */
+/* Informações do rodapé */
 .rodape-info {
     margin-top: 16px;
     font-size: 0.9rem;
 }
 
-/* Developer link */
+/* Link do desenvolvedor */
 .desenvolvido-por {
     text-decoration: none;
-    color: var(--principal);
+    color: inherit; /* Mesmo tom que o texto ao redor */
+    pointer-events: auto; /* Permite o clique */
+    cursor: pointer; /* Exibe o cursor de link */
 }
 
-/* Form styling (if applicable) */
+.desenvolvido-por:hover {
+    color: var(--hover); /* Altera a cor no hover, se quiser */
+}
+
+/* Links no rodapé com aparência de texto */
+.rodape a,
+.rodape a:visited {
+    color: white; /* Mesma cor do texto */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rodape a:hover {
+    color: var(--hover); /* Feedback sutil no hover */
+}
+
+/* Formulários */
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Spacing between form elements */
+    gap: 16px;
     max-width: 500px;
     margin: 0 auto;
 }
 
-/* Media query for small screens */
+/* Regras Responsivas */
 @media (max-width: 768px) {
-    /* Stack layout vertically */
     .conteudo-principal-escrito,
     .conteudo-principal-imagem,
     .formulario {
         width: 100%;
     }
 
-    /* Adjust header layout */
     .cabecalho {
         flex-direction: column;
         align-items: flex-start;
