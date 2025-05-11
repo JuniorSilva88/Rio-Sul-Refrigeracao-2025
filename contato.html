@@ -22,7 +22,9 @@
 <body>
 
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="img/logo-rs.png" alt="Logo da Rio Sul Refrigeração">
+        <a href="index.html">
+            <img class="cabecalho-imagem" src="img/logo-rs.png" alt="Logo da Rio Sul Refrigeração">
+        </a>
 
         <nav class="cabecalho-menu navbar navbar-expand-sm">
             <!-- Botão do hamburguer -->
@@ -40,7 +42,6 @@
             </div>
         </nav>
     </header>
-
     <main class="conteudo"> <!--Conteudo-->
 
         <section class="conteudo-principal"> <!--Conteudo Principal-->
@@ -48,34 +49,38 @@
             <div class="formulario"><!-- Formulário -->
 
                 <h2 class="entre-em-contato">Entre em contato conosco:</h2>
-            
-                <form action="https://formsubmit.co/alexandra_ale25@hotmail.com" method="POST"> 
+
+                <form action="https://formsubmit.co/alexandra_ale25@hotmail.com" method="POST">
                     <!--<form action="https://formsubmit.co/cwbalexandresilva@gmail.com" method="POST"></form> ( FALTA VALIDAÇÃO DO CLIENTE)// Fim Formulário-->
                     <input type="hidden" name="_template" value="table">
-            
+
                     <input type="hidden" name="_autoresponse" value="Olá, Obrigado por entrar em contato conosco. 
                     Recebemos sua mensagem e vamos respondê-la assim que possível.                    
                     Agradecemos pelo seu interesse em nossos serviços e estamos ansiosos para poder ajudá-lo da melhor maneira possível.
                     Atenciosamente:
                     Rio Sul Refrigeração">
-            
+
                     <label class="texto" for="nome">Nome:</label>
-                    <input class="nome" type="text" id="nome" required name="nome" placeholder="Digite seu nome"><br><br>
-            
+                    <input class="nome" type="text" id="nome" required name="nome"
+                        placeholder="Digite seu nome"><br><br>
+
                     <label class="texto" for="email">E-mail:</label>
-                    <input class="email" type="email" id="email" required name="email" placeholder="seu@email.com"><br><br>
-            
+                    <input class="email" type="email" id="email" required name="email"
+                        placeholder="seu@email.com"><br><br>
+
                     <label class="texto" for="telefone">Telefone:</label>
-                    <input class="telefone" type="tel" id="telefone" required name="telefone" placeholder="(xx) x xxxx-xxxx"><br><br>
-            
+                    <input class="telefone" type="tel" id="telefone" required name="telefone"
+                        placeholder="(xx) x xxxx-xxxx"><br><br>
+
                     <label class="texto" for="mensagem">Mensagem:</label><br>
-                    <textarea class="mensagem" id="mensagem" required name="mensagem" placeholder="Digite aqui sua mensagem."></textarea><br><br>
-            
+                    <textarea class="mensagem" id="mensagem" required name="mensagem"
+                        placeholder="Digite aqui sua mensagem."></textarea><br><br>
+
                     <button class="botao" type="submit" value="Enviar">Enviar</button>
                 </form>
-            
+
             </div> <!--// Fim Formulário -->
-            
+
 
             <img class="conteudo-principal-imagem" src="img/simbolo.jfif" alt="simbolo de refrigeracao">
 
