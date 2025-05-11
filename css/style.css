@@ -181,13 +181,86 @@ body {
     color: var(--hover); /* Feedback sutil no hover */
 }
 
-/* Formulários */
+/* Estilo geral do formulário */
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 500px;
-    margin: 0 auto;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo dos campos de entrada */
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--fonte);
+    background-color: #f9f9f9; /* Fundo claro */
+    transition: all 0.3s ease;
+}
+
+/* Foco nos campos de entrada */
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: var(--hover); /* Cor de borda no foco */
+    background-color: #fff; /* Fundo branco ao focar */
+    box-shadow: 0 0 8px var(--hover); /* Efeito de sombra sutil */
+}
+
+/* Estilo do botão de envio */
+.formulario button {
+    padding: 12px 20px;
+    background-color: var(--borda); /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.formulario button:hover {
+    background-color: var(--hover); /* Muda para a cor de hover */
+}
+
+/* Estilo das labels */
+.formulario label {
+    font-size: 1.1rem;
+    color: var(--fonte);
+    margin-bottom: 8px;
+}
+
+/* Ajuste para o textarea (campo de mensagem) */
+.formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Mensagem de sucesso ou erro */
+.mensagem {
+    font-size: 1rem;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
 /* Regras Responsivas */
