@@ -41,6 +41,8 @@ body {
 
 .cabecalho-imagem {
     max-width: 150px;
+    border-radius: 5px;
+    border-shadow: 0 2px 4px var(--sombra);
 }
 
 .cabecalho-menu {
